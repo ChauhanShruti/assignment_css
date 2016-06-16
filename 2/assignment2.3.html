@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<style type="text/css">
+	body{
+		background:url("images.jpg");
+		 background-size:cover;
+	
+	}
+		div{
+			background-color: rgba(255,255,255,0.5);
+			padding: 2px;
+			width:400px;
+			 border-radius: 4px;
+			 margin:3px;
+			 
+
+			
+		}
+		legend{
+			color:white;
+		}
+		fieldset{
+			border:none;
+		}
+	    .inp{
+	    	border-radius: 5px;
+	    	margin:5px;
+	    	margin-left: 80px;
+
+	    }
+	    form { 
+margin: 0 auto; 
+width:400px;
+}
+
+.im{
+	margin-left:4px;
+}
+.rad{
+	margin-left:30px;
+}
+
+.button {
+    background-color:black; 
+    color: white;
+    text-align: center;
+    padding:4px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-left: 160px; ; 
+    width:100px;
+    border: none;
+}
+
+
+	</style>
+</head>
+<body>
+
+
+<form>
+<fieldset>
+<legend>Step 1: Your details</legend>
+<div>Name<input type="text" name="name" class="inp"></div> 
+<div>Email<input type="text" name="email" class="inp"></div> 
+<div>Phone<input type="text" name="phone" class="inp"></div> 
+</fieldset>
+<fieldset>
+<legend>Step 1: Delivery address</legend>
+<div>Address<textarea rows="3" cols="30" class="inp">
+</textarea></div>
+<div>Post code<input type="text" name="postcode" class="inp"></div> 
+<div>Country<input type="text" name="country" class="inp"></div> 
+</fieldset>
+<fieldset>
+<legend>Step 1: Card Details</legend>
+<div>Card type <br> <input type="radio" name="cardtype" class="rad"><img src="visa.png" width=40px height=20px class="im"> <input type="radio" name="cardtype" class="rad"><img src="amx.gif" width=40px height=20px class="im"> <input type="radio" name="cardtype" class="rad"><img src="maestro.png" width=40px height=20px class="im"> </div> 
+<div>Card number<input type="text" name="cardnumber" class="inp"></div> 
+<div>Security code<input type="text" name="securitycode" class="inp"></div> 
+<div>Name on card<input type="text" name="nameoncard" class="inp"></div>
+</fieldset>
+
+<button class="button">BUY IT!</button>
+
+
+</form>
+
+
+</body>
+</html>
